@@ -146,7 +146,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: white;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: url(../img/banner.jpg) no-repeat bottom center scroll;
     background-color: black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -156,7 +156,7 @@ a:focus {
 
 .intro .intro-body {
     display: table-cell;
-    vertical-align: middle;
+    
 }
 
 .intro .intro-body .brand-heading {
@@ -375,6 +375,7 @@ th {
 
 .calendar {
     margin: auto;
+    
 }
 
 .calendar-sub {
@@ -399,8 +400,79 @@ th {
     font-size: 18px;
 }
 
-imgwhen {
+.imgwhen {
     float: right;
+    width: auto;
+    height: auto;
+    max-width: 200px;
+    max-height: 300px;
+    margin-top: 20px;
+    @media (max-width: 768px) {
+        .sm-center {
+            display: block;
+            float: none;
+            margin: auto;
+        }
+    }
+}
+
+.imgdetail {
+    margin: auto;
+    width: auto;
+    height: auto;
+    max-width: 600px;
+    max-height: 300px;
+    margin-bottom: 25px;
+    @media (max-width: 768px) {
+        .sm-center {
+            display: block;
+            margin: auto;
+        }
+    }
+}
+
+.imgdetail2 {
+    margin: auto;
+    width: auto;
+    height: auto;
+    max-width: 600px;
+    max-height: 300px;
+    padding-top: 25px;
+    @media (max-width: 768px) {
+        .sm-center {
+            display: block;
+            margin: auto;
+        }
+    }
+}
+
+.imgnome {
+    margin: auto;
+    width: auto;
+    height: auto;
+    max-width: 600px;
+    max-height: 300px;
+    margin-top: 90px;
+    @media (max-width: 768px) {
+        .sm-center {
+            display: block;
+            margin: auto;
+        }
+    }
+}
+
+.imgtitle {
+    float:left;
+    width: auto;
+    height: auto;
+    max-width: 480px;
+    max-height: 600px;
+    @media (max-width: 768px) {
+        .sm-center {
+            display: block;
+    
+        }
+    }
 }
 
 .bold {
@@ -444,7 +516,7 @@ imgwhen {
     float: none;
 }
 
-.rsvpback{
+.rsvpback {
     position: relative;
     width: 100%;
     min-height: auto;
@@ -456,4 +528,62 @@ imgwhen {
     background-image: url('../img/disco3.jpg');
 }
 
+@media (max-width: 768px) {
+    .bigtitle {
+        text-align: center;
+    }
+    .sm-center {
+        display: block;
+        margin: auto;
+    }
+}
 
+.imgsize {
+    max-width: 440px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+header .header-content {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+header .header-content .header-content-inner h1 {
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+@media (min-width: 768px) {
+    header {
+        min-height: 100%;
+    }
+    header .header-content {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        padding: 0 50px;
+    }
+    header .header-content .header-content-inner {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    header .header-content .header-content-inner h1 {
+        font-size: 50px;
+    }
+    header .header-content .header-content-inner p {
+        font-size: 18px;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
