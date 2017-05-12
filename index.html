@@ -76,11 +76,11 @@
     <!-- Intro Header -->
     <header class="intro header-content">
         <div class="intro-body header-content-inner  margin-bottom:10px;">
-            <img src="img/nome.png" alt="Carolina Linhares" class="img-responsive sm-center imgnome" id="img">
+            <img src="img/nome.png" alt="Carolina Linhares" class="img-fluid sm-center imgnome" id="img">
             <div class="container">
                 <div class="row" style="margin-top:10px;">
                     <div class="col-md-8 col-md-offset-1">
-                        <img src="img/title.png" alt="Carolina Linhares" class="img-responsive sm-center imgtitle" id="img">
+                        <img src="img/title.png" alt="Carolina Linhares" class="img-fluid sm-center imgtitle" id="img">
                     </div>
                 </div>
             </div>
@@ -101,24 +101,25 @@
     <section id="about" class="container content-section text-center aboutback" style="padding-top:50px;">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <img src="img/d1.png" alt="detalhe" class="img-responsive sm-center imgdetail" id="img">
+                <img src="img/d1.png" alt="detalhe" class="img-fluid sm-center imgdetail" id="img">
                 <h2>Caros (as),</h2>
                 <p style="text-align: justify; margin-bottom:20px;"> É com grande felicidade que convido vocês para celebrar a minha formatura em Engenharia Civil. Após receber o título de Engenheira Mecatrônica em 2015, no dia 25 de maio em solenidade no Hotel Fiesta da Bahia às 20h, irei receber o grau de Engenheira Civil pela Universidade Federal da Bahia. Foi uma longa trajetória de estudos, projetos e aventuras, que ficarão marcadas para sempre na minha vida. </p>
                 <p class="italic" style="margin-bottom:20px;"> Conto com a presença de vocês para comemorarmos esta nova conquista!</p>
-
                 <table class="calendar col-lg-8 sm-center" style="margin: inherit;">
-                    <tr class="calendar-numbers">
-                        <th id="days"></th>
-                        <th id="hours"></th>
-                        <th id="minutes"></th>
-                        <th id="seconds"></th>
-                    </tr>
-                    <tr class="calendar-sub">
-                        <th> dias </th>
-                        <th> horas </th>
-                        <th> minutos </th>
-                        <th> segundos </th>
-                    </tr>
+                    <tbody style="margin: inherit;">
+                        <tr class="calendar-numbers">
+                            <th id="days"></th>
+                            <th id="hours"></th>
+                            <th id="minutes"></th>
+                            <th id="seconds"></th>
+                        </tr>
+                        <tr class="calendar-sub">
+                            <th> dias </th>
+                            <th> horas </th>
+                            <th> minutos </th>
+                            <th> segundos </th>
+                        </tr>
+                    </tbody>
                 </table>
                 <img src="img/d2.png" alt="detalhe" class="img-responsive sm-center imgdetail2" id="img">
             </div>
@@ -140,8 +141,8 @@
                 <div class="clearfix sm-center">
                     <img src="img/glass.png" alt="formatura" class="img-responsive sm-center imgwhen" id="img">
                 </div>
-                
-                
+
+
             </div>
         </div>
     </section>
@@ -157,36 +158,36 @@
 
     <!-- RSVP Section -->
     <section id="rsvp" class="container content-section text-center rsvpback">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>RSVP</h2>
-                    <p>Confirme sua presença no evento!</p>
-                    <div class="col-lg-8 centerform" style="margin:auto;">
-                        <form style="margin:auto;" action="https://formspree.io/carolinamlinhares@gmail.com" method="POST" name="sentMessage" id="contactForm" novalidate>
-                            <div class="row" style="margin:auto;">
-                                <div class="form-group">
-                                    <input type="text" name="name" class="form-control" placeholder="Nome Completo*" id="name" required data-validation-required-message="Por favor informe seu nome.">
-                                    <p class="help-block text-danger" style="color: white; list-style-type: none;"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" name="date" class="form-control" placeholder="Nome do(a) acompanhante, se houver" id="course">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input type="tel" name="phone" class="form-control" placeholder="Telefone (opcional)" id="phone">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <textarea class="form-control" name="message" placeholder="Deixe uma mensagem (opcional)" id="message"></textarea>
-                                    <p class="help-block text-danger"></p>
-                                </div><br><br>
-                                <div class="col-lg-8 centerform" style="margin:auto;">
-                                    <div id="success" class="btn-rsvp"></div>
-                                    <button type="submit" class="btn-rsvp btn btn-default btn-xl">Confirmar</button>
-                                </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>RSVP</h2>
+                <p>Confirme sua presença no evento!</p>
+                <div class="col-lg-8 centerform" style="margin:auto;">
+                    <form style="margin:auto;" action="https://formspree.io/carolinamlinhares@gmail.com" method="POST" name="sentMessage" id="contactForm" novalidate>
+                        <div class="row" style="margin:auto;">
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" placeholder="Nome Completo*" id="name" required data-validation-required-message="Por favor informe seu nome.">
+                                <p class="help-block text-danger" style="color: white; list-style-type: none;"></p>
                             </div>
-                        </form>
-                    </div>
+                            <div class="form-group">
+                                <input type="text" name="date" class="form-control" placeholder="Nome do(a) acompanhante, se houver" id="course">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" name="phone" class="form-control" placeholder="Telefone (opcional)" id="phone">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" name="message" placeholder="Deixe uma mensagem (opcional)" id="message"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div><br><br>
+                            <div class="col-lg-8 centerform" style="margin:auto;">
+                                <div id="success" class="btn-rsvp"></div>
+                                <button type="submit" class="btn-rsvp btn btn-default btn-xl">Confirmar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
     </section>
 

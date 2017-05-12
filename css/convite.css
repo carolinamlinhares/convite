@@ -146,7 +146,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: white;
-    background: url(../img/banner2.png) no-repeat bottom center scroll;
+    background: url(../img/banner2.png) no-repeat bottom;
     background-color: black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -156,7 +156,6 @@ a:focus {
 
 .intro .intro-body {
     display: table-cell;
-    
 }
 
 .intro .intro-body .brand-heading {
@@ -375,7 +374,6 @@ th {
 
 .calendar {
     margin: auto;
-    
 }
 
 .calendar-sub {
@@ -384,6 +382,13 @@ th {
 
 .calendar-numbers {
     font-size: 50px;
+}
+
+@media (max-width: 767px) {
+    .calendar {
+        margin: 0 auto; !important
+        float: none;
+    }
 }
 
 .text-left {
@@ -407,12 +412,17 @@ th {
     max-width: 200px;
     max-height: 300px;
     margin-top: 20px;
-    @media (max-width: 768px) {
-        .sm-center {
-            display: block;
-            float: none;
-            margin: auto;
-        }
+}
+
+@media (max-width: 768px) {
+    .imgwhen {
+        margin:auto;
+        padding-top: 20px;
+    }
+    .sm-center {
+        display: block;
+        float: none;
+        margin: auto;
     }
 }
 
@@ -462,16 +472,31 @@ th {
 }
 
 .imgtitle {
-    float:left;
-    width: auto;
+    float: left;
+    width: 100%;
     height: auto;
     max-width: 480px;
     max-height: 600px;
-    @media (max-width: 768px) {
-        .sm-center {
-            display: block;
-    
-        }
+}
+
+@media (max-width: 768px) {
+    .imgnome {
+        height: auto;
+        width: auto;
+        max-width: 200px;
+        max-height: 80px;
+        margin: auto;
+        top: 50%;
+        @me
+    }
+    .imgtitle {
+        height: auto;
+        width: auto;
+        max-width: 200px;
+        max-height: 350px;
+        margin: auto;
+        top: 50%;
+        @me
     }
 }
 
