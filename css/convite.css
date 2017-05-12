@@ -679,6 +679,5 @@
     
     @media (max-width: 768px) {
         .btn-down {
-            margin-left: 30px;
-            margin-top: 50px;
+            display:none;
         }
